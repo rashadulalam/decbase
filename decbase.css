@@ -17,3 +17,43 @@ body {
     font-weight: 400;
     /* color: #646464; */
 }
+
+/* Header css */
+
+.header-area {
+
+}
+.header-area .nav-item {
+    margin-left: 30px;
+}
+.header-area .nav-item .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #111;
+    font-size: 17px;
+}
+.header-area .nav-item .nav-link.active {
+    color: #646464;
+}
+.header-area .nav-item:last-child .nav-link {
+    background-color: #CAA892;
+    text-transform: capitalize;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 35px;
+}
+
+@media (max-width: 991px) {
+    .header-area .nav-item:last-child .nav-link {
+        margin-left: 0;
+        /* border-radius: 10px; */
+    }
+    .header-area .nav-item:last-child .nav-link {
+        margin-left: 0;
+        border-radius: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
