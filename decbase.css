@@ -19,9 +19,43 @@ body {
 }
 h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif; 
-    font-weight: normal;
+    font-weight: 500;
+    color: #212121;
 }
 
+.theme-button {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #37806B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px 0px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.theme-button:hover {
+    background-color: #CAA892;
+    color: #fff;
+}
+.design-image {
+    position: relative;
+    z-index: 1;
+    border-radius: 140px 0;
+}
+.design-image::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 20px;
+    border: 2px solid #CAA892;
+    width: 100%;
+    height: 100%;
+    border-radius: 140px 0;
+    z-index: -1;
+}
 /* Header css */
 .header-area .nav-item {
     margin-left: 30px;
@@ -39,8 +73,7 @@ h1, h2, h3, h4 {
     background-color: #CAA892;
     text-transform: capitalize;
     color: #fff;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px 0px;
     padding: 10px 20px;
     margin-left: 35px;
 }
@@ -59,10 +92,28 @@ h1, h2, h3, h4 {
 }
 
 /* 
- Main area css
+ hero-area css
 */
-.main-area {
-    padding: 200px 0;
+.hero-area {
+    padding: 70px 0;
+}
+.hero-text {
+
+}
+.hero-text h3 {
+    color: #646464;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.hero-text h2 {
+    text-transform: capitalize;
+    font-size: 70px;
+    
+    font-weight: 500;
+
+}
+.hero-img {
+
 }
 
 /* 
