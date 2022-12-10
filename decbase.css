@@ -4,7 +4,7 @@
  font-family: 'Poppins', sans-serif; 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap');
 
 /* 
  Basic css
@@ -56,6 +56,19 @@ h1, h2, h3, h4 {
     border-radius: 140px 0;
     z-index: -1;
 }
+.section-heading {
+    
+}
+.section-heading h4{
+    text-transform: uppercase;
+    color: #646464;
+    font-size: 20px;
+}
+.section-heading h3 {
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 600;
+}
 /* Header css */
 .header-area .nav-item {
     margin-left: 30px;
@@ -88,7 +101,7 @@ h1, h2, h3, h4 {
         border-radius: 10px;
         margin-top: 10px;
         text-align: center;
-    }
+        }
 }
 
 /* 
@@ -115,6 +128,76 @@ h1, h2, h3, h4 {
 .hero-img {
 
 }
+
+/* 
+ Services area css
+ */
+
+.service-area {
+    padding: 100px 0;
+}
+.service-list {
+    margin-top: 60px;
+    position: relative;
+}
+.single-service {
+    /* padding: 40px 20px 40px 35px; */
+    background: #FFFFFF;
+    /* box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14); */
+
+    border-radius: 60px 0px;
+    transition: 0.3s;
+}
+.service-image {
+    margin-right: 25px;
+}
+.service-image img {
+    width: 40px !important;
+    height: 40px !important;
+    display: block;
+}
+.service-text h3 {
+    font-weight:400;
+    font-size: 24px;
+}
+.service-text p {
+    font-weight: 600;
+    color: #646464;
+    margin: 0;
+}
+.single-service:hover {
+    background-color: #CAA892;
+    cursor: pointer;
+    color: #fff;
+}
+.single-service:hover .service-text h3,
+.single-service:hover .service-text p {
+    color: #fff;
+}
+.service-list .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -90px;
+}
+.service-list .owl-nav button {
+    width: 30px;
+    height: 30px;
+    background-color: #fff !important;
+    color: #646464 !important;
+    text-align: center;
+    border-radius: 100%;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.service-list .owl-nav button:hover {
+    background-color: #37806B !important;
+    color: #fff !important;
+}
+
+
+
 
 /* 
  Footer css
