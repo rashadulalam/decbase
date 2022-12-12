@@ -102,13 +102,12 @@ h1, h2, h3, h4, h5 {
 
 /* Header css */
 .header-area .nav-item {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .header-area .nav-item .nav-link {
     text-transform: uppercase;
     font-weight: 600;
     color: #111;
-    font-size: 17px;
 }
 .header-area .nav-item .nav-link.active {
     color: #646464;
@@ -275,13 +274,16 @@ h1, h2, h3, h4, h5 {
 .single-work-txt::after {
     position: absolute;
     content: "";
-    height: 100px;
-    width: 65px;
+    /* height: 100px;
+    width: 65px; */
+    width: 100%;
+    height: 100%;
     z-index: -1;
     right: -65px;
     top: 100px;
-    border-right: 1px solid #E0E0E0;
-    border-top: 1px solid #E0E0E0;
+    /* border-right: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0; */
+    background-image: url("assets/img/vactor1.png");
 }
 .single-work-txt.special::after {
     left: -65px;
@@ -373,6 +375,20 @@ h1, h2, h3, h4, h5 {
     position: absolute;
     right: 40px;
     top: 40px;
+}
+
+/* 
+ Blog area
+*/
+.blog-area {
+    background-color: #F8F8F8;
+    padding: 100px 0;
+}
+.blog-area .section-heading {
+    margin-bottom: 70px;
+}
+.blog-text {
+    margin-top: 40px;
 }
 /* 
  Footer css
