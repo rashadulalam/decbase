@@ -243,7 +243,61 @@ h1, h2, h3, h4, h5 {
     position: relative;
 }
 
-
+/* 
+ Work area css
+*/
+.work-area {
+    background-color: #f8f8f8;
+    padding: 100px 0;
+}
+.work-list {
+    margin-top: 100px;
+}
+.single-work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single-work-txt {
+    background: #fff;
+    box-shadow: 0px 13px 16px rgba(0,0,0, 0.1);
+    border-radius: 40px 0;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.single-work-txt::after {
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 65px;
+    z-index: -1;
+    right: -65px;
+    top: 100px;
+    border-right: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+}
+.single-work-txt.special::after {
+    left: -65px;
+    top: 100x;
+    border-right: none;
+}
+.single-work-txt h3 {
+    font-weight: 600;
+    font-size: 50px;
+}
+.single-work-txt span {
+    font-weight: 700;
+}
+.special {
+    margin-top: 100px;
+}
 /* 
  Footer css
 */
