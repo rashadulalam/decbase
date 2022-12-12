@@ -36,3 +36,22 @@ $(document).ready(function() {
         }
     })
 })
+
+$(document).ready(function() {
+    $('.all-testimonial').owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        nav: true,
+        dots: false,
+        autoplayTimeout: 2000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+})
